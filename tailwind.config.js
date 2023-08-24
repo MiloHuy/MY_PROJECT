@@ -1,16 +1,18 @@
 // tailwind.config.js
 const {nextui} = require("@nextui-org/react");
+const colors = require('tailwindcss/colors')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    './node_modules/@nextui-org/theme/dist/components/(button|snippet|code|input).js'
   ],
   theme: {
     extend: {
       colors: {
         white: "#FFFFFF",
-        black: "#000000",
+        black: colors.black,
         blue: {
           50: "#e6f1fe",
           100: "#cce3fd",
@@ -89,7 +91,7 @@ module.exports = {
             foreground: "#11181C",
             primary: {
               foreground: "#FFFFFF",
-              DEFAULT: "#006FEE",
+              DEFAULT: "#006fee",
             },
           },
         },
@@ -108,9 +110,21 @@ module.exports = {
             background: "#000000", 
             foreground: "#ECEDEE",
             primary: {
-              foreground: "#FFFFFF",
-              DEFAULT: "#006FEE",
+              foreground: "#000000",
+              DEFAULT: "#BEF264",
             },
+            focus: '#BEF264'
+          },
+        },
+        mytheme: {
+          // custom theme
+          extend: "dark",
+          colors: {
+            primary: {
+              DEFAULT: "#BEF264",
+              foreground: "#000000",
+            },
+            focus: "#BEF264",
           },
         },
         "purple-dark": {
