@@ -3,9 +3,11 @@ import {Button} from "@nextui-org/react";
 
 function App() {
   return (
-    <Button className="px-unit-2 py-unit-1 min-w-unit-3xl">
-      My Button
-    </Button>
+    <div className='purple-dark bg-background'>
+      <Button variant="solid" className='bg-purple-500 text-purple-500' color='primary'>
+        Solid
+      </Button>
+    </div>
   );
 }
 
