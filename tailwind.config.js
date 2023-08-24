@@ -91,8 +91,9 @@ module.exports = {
             foreground: "#11181C",
             primary: {
               foreground: "#FFFFFF",
-              DEFAULT: "#006fee",
+              DEFAULT: "#FDC323",
             },
+            focus:'#FDC323'
           },
         },
         dark: {
