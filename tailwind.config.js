@@ -6,10 +6,14 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
     './node_modules/@nextui-org/theme/dist/components/(button|snippet|code|input).js'
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto:['Roboto Slab','sans-serif']
+      },
       colors: {
         white: "#FFFFFF",
         black: colors.black,
@@ -54,7 +58,7 @@ module.exports = {
         fontSize: {
           tiny: "0.75rem", 
           small: "0.875rem", 
-          medium: "1rem", 
+          medium: "3rem", 
           large: "1.125rem", 
         },
         lineHeight: {
@@ -89,6 +93,9 @@ module.exports = {
           colors: {
             background: "#FFFFFF", 
             foreground: "#11181C",
+            content: '#F47206',
+            chart: '#B6D5AD',
+            success:'#98C38B',
             primary: {
               foreground: "#FFFFFF",
               DEFAULT: "#FDC323",
