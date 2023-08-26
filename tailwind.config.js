@@ -92,8 +92,9 @@ module.exports = {
           }, 
           colors: {
             background: "#FFFFFF", 
-            foreground: "#11181C",
+            foreground: "#999999",
             content: '#F47206',
+            text: '#444444',
             chart: '#B6D5AD',
             success:'#98C38B',
             primary: {
@@ -154,6 +155,9 @@ module.exports = {
               DEFAULT: "#DD62ED",
               foreground: "#ffffff",
             },
+            secondary: {
+              50:'#E791F2'
+            },  
             focus: "#F182F6",
           },
           layout: {

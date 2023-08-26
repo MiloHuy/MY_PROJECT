@@ -43,7 +43,7 @@ function Main() {
                     size='md'
                     className='w-[200px]'
                     startContent={
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                         </svg>
                     }
@@ -79,26 +79,26 @@ function Main() {
             </div>
             <div className='grid grid-cols-2 gap-2 h-max '>
                 <div className='relative flex justify-center items-center w-full h-full  '>
-                    <div className='relative w-2/3 gap-10 h-full flex flex-col bg-chart rounded-[30px] p-3'>
-                        <p className="text-[20px] uppercase font-roboto font-bold p-2">
+                    <div className='relative w-2/3 gap-12 h-full flex flex-col bg-chart rounded-[30px] p-3'>
+                        <p className="text-[20px] text-text uppercase font-roboto font-bold p-2">
                             Statistics
                         </p>
                         <div className='flex justify-center items-center' style={{ height: '200px', width: 'full' }}>
                             <Doughnut data={data_doughnut} options={options_doughnut} />
                         </div>
-                        <div className='flex justify-around mt-2 gap-4'>
+                        <div className='h-1/4 flex flex-col justify-around mt-2 items-center gap-4 '>
                             <Chip color="success" variant="dot" >
-                                <p className="text-[12px] uppercase font-roboto font-bold ">
+                                <p className="text-[12px] text-text uppercase font-roboto font-bold ">
                                     60% Completed
                                 </p>
                             </Chip>
                             <Chip color="success" variant="dot" >
-                                <p className="text-[12px] uppercase font-roboto font-bold ">
+                                <p className="text-[12px] text-text uppercase font-roboto font-bold ">
                                     10% Progress
                                 </p>
                             </Chip>
                             <Chip color="success" variant="dot" >
-                                <p className="text-[12px] uppercase font-roboto font-bold ">
+                                <p className="text-[12px] text-text uppercase font-roboto font-bold ">
                                     30% To Start
                                 </p>
                             </Chip>
@@ -128,7 +128,6 @@ function Main() {
                                             width="100%"
                                         />
                                     </div>
-
                                     <div className="flex flex-col col-span-6 md:col-span-8">
                                         <div className="flex justify-between items-start">
                                             <div className="flex flex-col gap-0">
@@ -166,7 +165,6 @@ function Main() {
                 </div>
             </div>
         </div>
-
     )
 }
 export default Main
